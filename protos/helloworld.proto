@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// For java
+option java_package = "nd.pxample.pemo.grpc";
+option java_outer_classname = "HelloWorld";
+//option java_mutiple_files = false;
+option objc_class_prefix = "HLW";
+
+package helloworld;
+
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloResponse) {}
+}
+
+message HelloRequest {
+  string myname = 1;
+}
+
+message HelloResponse {
+  string responseMsg = 1;
+}
