@@ -154,7 +154,7 @@ make: *** [Makefile:33: helloworld.grpc.pb.cc] Error 1
 
 **solution1**
 
-Add `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib64:/lib:/usr/lib64:/usr/lib:/us    r/local/lib64:/usr/local/lib`
+Add `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib64:/lib:/usr/lib64:/usr/lib:/usr/local/lib64:/usr/local/lib`
 to `~/.bash_profile` and run `source ~/.bash_profle` in bash
 
 **solution2**
@@ -176,15 +176,15 @@ And run `sudo ldconfig`
 ### 2.1 The protocol buffer compiler
 
 ```shell
-[user@localhost grpc-cpp-server-sample]$ protoc -I ./protos --grpc_out=./grpcsample --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` ./protos/helloworld.proto
-[user@localhost grpc-cpp-server-sample]$ ls grpcsample/
+[user@localhost grpc-cpp-server-sample]$ protoc -I ./protos --grpc_out=./api --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` ./protos/helloworld.proto
+[user@localhost grpc-cpp-server-sample]$ ls api/
 helloworld.grpc.pb.cc  helloworld.grpc.pb.h
 
 ```
 
 ```shell
-[user@localhost grpc-cpp-server-sample]$ protoc -I ./protos --cpp_out=./grpcsample/ ./protos/helloworld.proto
-[user@localhost grpc-cpp-server-sample]$ ls grpcsample/
+[user@localhost grpc-cpp-server-sample]$ protoc -I ./protos --cpp_out=./api/ ./protos/helloworld.proto
+[user@localhost grpc-cpp-server-sample]$ ls api/
 helloworld.grpc.pb.cc  helloworld.grpc.pb.h  helloworld.pb.cc  helloworld.pb.h
 
 ```

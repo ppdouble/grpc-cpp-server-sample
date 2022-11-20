@@ -5,7 +5,7 @@
 #ifndef GRPC_CPP_SERVER_SAMPLE_GREETERSERVICEIMPL_H
 #define GRPC_CPP_SERVER_SAMPLE_GREETERSERVICEIMPL_H
 
-#include "../grpcsample/helloworld.grpc.pb.h"
+#include "../api/helloworld.grpc.pb.h"
 
 // using the namespace provided by generated source file
 using namespace helloworld;

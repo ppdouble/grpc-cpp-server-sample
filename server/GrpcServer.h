@@ -6,7 +6,7 @@
 #define GRPC_CPP_SERVER_SAMPLE_GRPCSERVER_H
 
 #include "../service/GreeterServiceImpl.h"
-#include <grpc/grpc.h>
+#include "grpcpp/server_builder.h"
 
 class GrpcServer {
 

@@ -3,7 +3,6 @@
 //
 
 #include "GrpcServer.h"
-#include "grpcpp/server_builder.h"
 using namespace grpc;
 
 void GrpcServer::runServer(string serveruri) {

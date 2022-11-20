@@ -1,3 +1,11 @@
 cmake-build-debug/
 .idea/
 .wakatime-project
+
+Makefile
+
+Testing/
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+*.cbp
