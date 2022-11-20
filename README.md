@@ -194,3 +194,14 @@ an abstract interface for servers to implement, both with the
 method defined in our Greeting service.
 
 The code in those files are defined in namespace `helloword`.
+
+
+## Ref
+
+[cpp quickstart](https://grpc.io/docs/languages/cpp/quickstart/)
+
+[cpp basic tutorial](https://grpc.io/docs/languages/cpp/basics/)
+
+[gRPC C++ Hello World Tutorial](https://chromium.googlesource.com/external/github.com/grpc/grpc/+/chromium-deps/2016-07-19/examples/cpp/helloworld/README.md)
+
+[grpc INSTALL](https://chromium.googlesource.com/external/github.com/grpc/grpc/+/chromium-deps/2016-07-19/INSTALL.md)
