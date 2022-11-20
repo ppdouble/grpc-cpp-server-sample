@@ -8,6 +8,6 @@ int main(int argc, char *argv[]) {
 
     grpcServer.runServer("0.0.0.0:9906");
 
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "=== End ===" << std::endl;
     return 0;
 }

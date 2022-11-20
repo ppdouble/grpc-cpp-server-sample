@@ -2,10 +2,16 @@ cmake-build-debug/
 .idea/
 .wakatime-project
 
+main
+
 Makefile
 
 Testing/
 CMakeCache.txt
 CMakeFiles/
-*.cmake
 *.cbp
+*.cmake
+!common.cmake
+
+*.a
+*.so

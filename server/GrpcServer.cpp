@@ -18,7 +18,7 @@ void GrpcServer::runServer(string serveruri) {
 
     // create server and start
     unique_ptr<Server> server(serverBuilder.BuildAndStart());
-
+    cout << "Server uri " << serveruri << endl;
     // waiting for request from client
     server->Wait();
 
